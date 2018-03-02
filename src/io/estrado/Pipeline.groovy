@@ -19,14 +19,14 @@ def helmConfig() {
     //setup helm connectivity to Kubernetes API and Tiller
     println "initiliazing helm client"
     sh "helm init"
-    println "checking client/server version"
+    println "checking client/server version
     sh "helm version"
 }
 
 
 def helmDeploy(Map args) {
     //configure helm client and confirm tiller process is installed
-    helmConfig()
+    //helmConfig()
 
     def String namespace
 
